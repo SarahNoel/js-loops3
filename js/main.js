@@ -38,31 +38,33 @@ var students = [
 // printName(students);
 
 // // Problem 1
-// function printAge(arr){
-// arr.forEach(function(student){
-//   console.log(student.age);
-// });
-// }
+function printAge(arr){
+arr.forEach(function(student){
+  console.log(student.age);
+});
+}
 
-// printAge(students);
+printAge(students);
 
 // // Problem 2
-// function nameCity(arr){
-// arr.forEach(function(student){
-//   console.log(student.name + ",", student.city);
-// });
-// }
+function nameCity(arr){
+arr.forEach(function(student){
+  console.log(student.name + ",", student.city);
+});
+}
 
-// nameCity(students);
+nameCity(students);
 
 // Problem 3
-// function fromCity(arr){
-// arr.forEach(function(student){
-//   console.log(student.name + " is from", student.city);
-// });
-// }
+function fromCity(arr){
+arr.forEach(function(student){
+  if(student.city === "Boulder"){
+    console.log(student.name + " is from", student.city);
+    }
+  });
+}
 
-// fromCity(students);
+fromCity(students);
 
 // Derek is from Boulder
 // Carl is from Boulder
@@ -71,67 +73,15 @@ var students = [
 // Problem 4
 function over25(arr){
 arr.forEach(function(student){
-  console.log(student.name + " is older than", student.age);
-});
+  if(student.age > 25){
+    console.log(student.name + " is older than 25");
+    }
+  });
 }
 
-fromCity(students);
+over25(students);
 // Liz is older than 25
 // Carl is older than 25
-
-
-// var numbers = [2, 12, 3, 17, 233, 21];
-
-// // Traditional For Loop
-
-// var doubleNumbers = [];
-
-// for (var i = 0; i < numbers.length; i++) {
-//   doubleNumbers.push(numbers[i] * 2);
-// }
-// console.log(doubleNumbers);
-
-
-// // // Map callback function
-
-// var doubleDown = function(number, index){
-//  // index is an optional argument
-//  // console.log('Index : ', index)
-//  return number * 2;
-// };
-
-// console.log(doubleDown(4));
-// var doubleNumbers = numbers.map(doubleDown);
-
-
-
-// map(), filter(), and reduce()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 });
